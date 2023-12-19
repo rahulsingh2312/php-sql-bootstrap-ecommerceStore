@@ -16,15 +16,22 @@
 <!-- icons -->
 <script src="https://kit.fontawesome.com/f97b1fb4fe.js" crossorigin="anonymous"></script>
 </head>
+<?php 
+
+session_start();
+if(!$_SESSION['admin']){
+  header("location:form/login.php");
+}
+?>
   <body>
   <nav class="navbar navbar-light bg-dark">
 <div class="container-fluid text-white">
 <a class="navbar-brand text-white"><h1>kolhapuri chappal</h1></a>
 <span>
 <i class="fas fa-user-shield" ></i>
-Hello, |
-<i class="fas fa-sign-out-alt"></i>
-<a href="" class="text-decoration-none text-white">Logout |</a>
+Hello, <?php echo $_SESSION['admin'];?>
+<i class="mx-1 fas fa-sign-out-alt"></i>
+<a href="form/logout.php" class="text-decoration-none text-white">Logout |</a>
 <a href="" class="text-decoration-none text-white">Userpanel </a>
 </span>
 </div>
@@ -38,7 +45,7 @@ Hello, |
 </div>
 
 <div class="bg-danger col-md-6 m-auto text-center ">
-<a href="" class="text-white text-decoration-none fs-4 fw-bold px-5 "> ADD POST </a>
+<a href="./product/index.php" class="text-white text-decoration-none fs-4 fw-bold px-5 "> ADD POST </a>
 <a href="" class="text-white text-decoration-none fs-4 fw-bold px-5"> Users </a>
 </div>
 
