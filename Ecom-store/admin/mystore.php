@@ -46,7 +46,7 @@ Hello, <?php echo $_SESSION['admin'];?>
 
 <div class="bg-danger col-md-6 m-auto text-center ">
 <a href="./product/index.php" class="text-white text-decoration-none fs-4 fw-bold px-5 "> ADD POST </a>
-<a href="" class="text-white text-decoration-none fs-4 fw-bold px-5"> Users </a>
+<!-- <a href="" class="text-white text-decoration-none fs-4 fw-bold px-5"> Users </a> -->
 </div>
 
 

@@ -37,9 +37,9 @@
     <label class="form-label">Select Page Category</label>
     <select class="form-select" name="Pages">
     <option value="Home">Home</option>
-    <option value="Laptop">Laptop</option>
-    <option value="Bag">Bag</option>
-    <option value="Mobile">Mobile</option>
+    <option value="Men">Men</option>
+    <option value="Women">Women</option>
+   
     </select>
     </div>
     <button name="submit" class="bg-danger fs-4 fw-bold my-3 form-control text-white">Upload</button>
@@ -68,6 +68,7 @@
 
 <th>Category</th>
 <th>Delete</th>
+<th>Update</th>
 </thead>
 
 <tbody class="text-center">
@@ -82,7 +83,9 @@ echo"
 <td>$row[PPrice]</td>
 <td><img src='$row[Pimage]' height= '90px' width = '200px'> </td>
 <td>$row[PCategory]</td>
-<td></td>
+<td><a href='' class='btn-danger btn'> Delete</a></td>
+<td><a href='update.php? ID=$row[Id]' class='btn-warning btn'> Update</a></td>
+
 </tr>
 ";
 ?>
